@@ -1,0 +1,23 @@
+{
+  "name": "atom-zurb-foundation-jade",
+  "main": "./lib/atom-zurbfoundation",
+  "version": "1.0.0",
+  "description": "Jade snippets for Zurb Foundation 6 for sites.",
+  "keywords": [
+    "zurb foundation for sites",
+    "foundation 6",
+    "foundation",
+    "zurb foundation 6",
+    "atom-snippets",
+    "responsive framework",
+    "zurb foundation",
+    "jade",
+    "foundation snipptes for jade",
+
+  ],
+  "repository": "https://github.com/gbratsos/atom-zurb-foundation",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

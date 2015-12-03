@@ -1,0 +1,1028 @@
+".text.jade":
+  'Button':
+    'prefix': 'button'
+    'body': """
+      a.button(href='$0') $1
+    """
+  'Button Group':
+    'prefix': 'button-group'
+    'body': """
+      .button-group
+        a.button $1
+    """
+  'Secondary Button Group':
+    'prefix': 'secondary-button-group'
+    'body': """
+      .expanded.button-group
+        a.button $1
+    """
+  'Expanded Button Group':
+    'prefix': 'expanded-button-group'
+    'body': """
+      .expanded.button-group
+        a.button $1
+    """
+  'Stacked Button Group':
+    'prefix': 'stacked-button-group'
+    'body': """
+      .stacked-for-small.button-group
+        a.button $1
+    """
+  'Split Buttons':
+    'prefix': 'split-buttons'
+    'body': """
+      .button-group
+        a.button $1
+        a.dropdown.button.arrow-only
+          span  class=&quot;show-for-sr&quot;&gt;$2
+    """
+  'Close Button':
+    'prefix': 'close-button'
+    'body': """
+      button.close-button(class='arial-label=', close='', type='button')
+        span(aria-hidden='true') &amp;times&apos;
+    """
+  'Slider':
+    'prefix': 'slider'
+    'body': """
+      .slider(data-slider='', data-initial-start='50', data-end='200')
+        span.slider-handle(data-slider-handle='', role='slider', tabindex='1')
+        span.slider-fill(data-slider-fill='')
+        input(type='hidden')
+    """
+  'Slider Vertical':
+    'prefix': 'slider-vertical'
+    'body': """
+      .slider.vertical(data-slider='', data-initial-start='25', data-end='200', data-vertical='true')
+        span.slider-handle(data-slider-handle='', role='slider', tabindex='1')
+        span.slider-fill(data-slider-fill='')
+        input(type='hidden')
+    """
+  'Slider Disbled':
+    'prefix': 'slider-disabled'
+    'body': """
+      .slider.disabled(data-slider='', data-initial-start='78')
+        span.slider-handle(data-slider-handle='', role='slider', tabindex='1')
+        span.slider-fill(data-slider-fill='')
+        input(type='hidden')
+    """
+  'Slider Two handles':
+    'prefix': 'slider-two-handles'
+    'body': """
+      .slider(data-slider='', data-initial-start='25', data-initial-end='75')
+        span.slider-handle(data-slider-handle='', role='slider', tabindex='1')
+        span.slider-fill(data-slider-fill='')
+        span.slider-handle(data-slider-handle='', role='slider', tabindex='1')
+        input(type='hidden')
+        input(type='hidden')
+    """
+  'Switch':
+    'prefix': 'switch'
+    'body': """
+      .switch
+        input#exampleSwitch.switch-input(type='checkbox', name='exampleSwitch')
+        label.switch-paddle(for='exampleSwitch')
+          span.show-for-sr $1
+    """
+  'Switch Radio':
+    'prefix': 'switch-radio'
+    'body': """
+      .switch
+        input#exampleRadioSwitch1.switch-input(type='radio', checked='', name='testGroup')
+        label.switch-paddle(for='exampleRadioSwitch1')
+          span.show-for-sr $1
+    """
+  'Switch Advanced':
+    'prefix': 'switch-advanced'
+    'body': """
+      p Do you like me?
+      .switch.large
+        input#yes-no.switch-input(type='checkbox', name='exampleSwitch')
+        label.switch-paddle(for='yes-no')
+          span.show-for-sr Do you like me?
+          span.switch-active(aria-hidden='true') Yes
+          span.switch-inactive(aria-hidden='true') No
+    """
+  'Menu':
+    'prefix': 'menu'
+    'body': """
+      ul.menu
+        li
+          a(href='#') Item One
+        li
+          a(href='#') Item Two
+        li
+          a(href='#') Item Three
+      """
+  'Dropdown Menu':
+    'prefix': 'dropdown-menu'
+    'body': """
+      ul.dropdown.menu(data-dropdown-menu='')
+        li
+          a Item 1
+          ul.menu
+            li
+              a(href='#') Item 1A Loooong
+            li
+              a(href='#')  Item 1 sub
+              ul.menu
+                li
+                  a(href='#') Item 1 subA
+                li
+                  a(href='#') Item 1 subB
+                li
+                  a(href='#')  Item 1 sub
+                  ul.menu
+                    li
+                      a(href='#') Item 1 subA
+                    li
+                      a(href='#') Item 1 subB
+                li
+                  a(href='#')  Item 1 sub
+                  ul.menu
+                    li
+                      a(href='#') Item 1 subA
+            li
+              a(href='#') Item 1B
+        li
+          a(href='#') Item 2
+          ul.menu
+            li
+              a(href='#') Item 2A
+            li
+              a(href='#') Item 2B
+        li
+          a(href='#') Item 3
+        li
+          a(href='#') Item 4
+    """
+  'Accordion Menu':
+    'prefix': 'accordion-menu'
+    'body': """
+      ul.vertical.menu(data-accordion-menu='')
+        li
+          a(href='#') Item 1
+          ul.menu.vertical.nested.is-active
+            li
+              a(href='#') Item 1A
+              ul.menu.vertical.nested
+                li
+                  a(href='#') Item 1Ai
+                li
+                  a(href='#') Item 1Aii
+                li
+                  a(href='#') Item 1Aiii
+            li
+              a(href='#') Item 1B
+            li
+              a(href='#') Item 1C
+        li
+          a(href='#') Item 2
+          ul.menu.vertical.nested
+            li
+              a(href='#') Item 2A
+            li
+              a(href='#') Item 2B
+        li
+          a(href='#') Item 3
+    """
+  'TopBar Menu':
+    'prefix': 'topbar-menu'
+    'body': """
+      .top-bar
+        .top-bar-left
+          ul.dropdown.menu(data-dropdown-menu='')
+            li.menu-text Site Title
+            li.has-submenu
+              a(href='#') One
+              ul.submenu.menu.vertical(data-submenu='')
+                li
+                  a(href='#') One
+                li
+                  a(href='#') Two
+                li
+                  a(href='#') Three
+            li
+              a(href='#') Two
+            li
+              a(href='#') Three
+        .top-bar-right
+          ul.menu
+            li
+              input(type='search', placeholder='Search')
+            li
+              button.button(type='button') Search
+    """
+  'Responsive Menu':
+    'prefix': 'responsive-menu'
+    'body': """
+      ul.vertical.medium-horizontal.menu
+        li
+          a(href='#') Item 1
+        li
+          a(href='#') Item 2
+        li
+          a(href='#') Item 3
+    """
+  'Responsive Menu Vertical':
+    'prefix': 'responsive-menu-vertical'
+    'body': """
+      ul.vertical.menu(data-responsive-menu='drilldown medium-dropdown', style='width: 300px;')
+        li.has-submenu
+          a(href='#') Item 1
+          ul#m2.vertical.submenu.menu(data-submenu='')
+            li.has-submenu
+              a(href='#') Item 1A
+              ul#m3.vertical.submenu.menu(data-submenu='')
+                li
+                  a(href='#') Item 1A
+                li
+                  a(href='#') Item 1B
+                li
+                  a(href='#') Item 1C
+                li
+                  a(href='#') Item 1D
+                li
+                  a(href='#') Item 1E
+            li
+              a(href='#') Item 1B
+        li.has-submenu
+          a(href='#') Item 2
+          ul.vertical.submenu.menu(data-submenu='')
+            li
+              a(href='#') Item 2A
+            li
+              a(href='#') Item 2B
+        li.has-submenu
+          a(href='#') Item 3
+          ul.vertical.submenu.menu(data-submenu='')
+            li
+              a(href='#') Item 3A
+            li
+              a(href='#') Item 3B
+    """
+  'Responsive Toggle':
+    'prefix': 'responsive-menu-toggle'
+    'body': """
+      .title-bar(data-responsive-toggle='example-menu', data-hide-for='medium')
+        button.menu-icon(type='button', data-toggle='')
+        .title-bar-title Menu
+      #example-menu.top-bar
+        .top-bar-left
+          ul.dropdown.menu(data-dropdown-menu='')
+            li.menu-text Site Title
+            li.has-submenu
+              a(href='#') One
+              ul.submenu.menu.vertical(data-submenu='')
+                li
+                  a(href='#') One
+                li
+                  a(href='#') Two
+                li
+                  a(href='#') Three
+            li
+              a(href='#') Two
+            li
+              a(href='#') Three
+        .top-bar-right
+          ul.menu
+            li
+              input(type='search', placeholder='Search')
+            li
+              button.button(type='button') Search
+      """
+  'Magellan':
+    'prefix': 'magellan-menu'
+    'body': """
+      ul.horizontal.menu(data-magellan='')
+        li
+          a(href='#first') First Arrival
+        li
+          a(href='#second') Second Arrival
+        li
+          a(href='#third') Third Arrival
+      .sections
+        section#first(data-magellan-target='first') First Section
+        section#second(data-magellan-target='second') Second Section
+        section#third(data-magellan-target='third') Third Section
+    """
+  'Sticky':
+    'prefix': 'sticky'
+    'body': """
+        div(data-sticky='header') $1
+      """
+  'Pagination':
+    'prefix': 'pagination'
+    'body': """
+      ul.pagination(role='navigation', aria-label='Pagination')
+        li.disabled
+          | Previous
+          span.show-for-sr page
+        li.current
+          span.show-for-sr You&apos;re on page
+          |  1
+        li
+          a(href='#', aria-label='Page 2') 2
+        li
+          a(href='#', aria-label='Page 3') 3
+        li
+          a(href='#', aria-label='Page 4') 4
+        li.ellipsis(aria-hidden='true')
+        li
+          a(href='#', aria-label='Page 12') 12
+        li
+          a(href='#', aria-label='Page 13') 13
+        li
+          a(href='#', aria-label='Next page')
+            | Next
+            span.show-for-sr page
+    """
+  'Pagination':
+    'prefix': 'pagination-centered'
+    'body': """
+      ul.pagination.text-center(role='navigation', aria-label='Pagination')
+        li.disabled Previous
+        li.current
+          span.show-for-sr You&apos;re on page
+          |  1
+        li
+          a(href='#', aria-label='Page 2') 2
+        li
+          a(href='#', aria-label='Page 3') 3
+        li
+          a(href='#', aria-label='Page 4') 4
+        li.ellipsis
+        li
+          a(href='#', aria-label='Page 12') 12
+        li
+          a(href='#', aria-label='Page 13') 13
+        li
+          a(href='#', aria-label='Next page') Next
+    """
+  'Breadcrumb':
+    'prefix': 'breadcrumb'
+    'body': """
+      nav(aria-label='You are here:', role='navigation')
+        ul.breadcrumbs
+          li
+            a(href='#') Home
+          li
+            a(href='#') Features
+          li.disabled Gene Splicing
+          li
+            span.show-for-sr Current:
+            |  Cloning
+    """
+  'Accordion':
+    'prefix': 'accordion'
+    'body': """
+      ul.accordion(data-accordion='', role='tablist')
+        li.accordion-item.is-active
+          // The tab title needs role="tab", an href, a unique ID, and aria-controls.
+          a#panel1d-heading.accordion-title(href='#panel1d', role='tab', aria-controls='panel1d') Accordion 1
+          // The content pane needs an ID that matches the above href, role="tabpanel", data-tab-content, and aria-labelledby.
+          #panel1d.accordion-content(role='tabpanel', data-tab-content='', aria-labelledby='panel1d-heading')
+            | Panel 1. Lorem ipsum dolor
+    """
+  'Accordion Multi-expand':
+    'prefix': 'accordion-multiexpand'
+    'body': """
+      ul.accordion(data-accordion='', data-multi-expand='true')
+        li.accordion-item.is-active
+          // The tab title needs role="tab", an href, a unique ID, and aria-controls.
+          a#panel1d-heading.accordion-title(href='#panel1d', role='tab', aria-controls='panel1d') Accordion 1
+          // The content pane needs an ID that matches the above href, role="tabpanel", data-tab-content, and aria-labelledby.
+          #panel1d.accordion-content(role='tabpanel', data-tab-content='', aria-labelledby='panel1d-heading')
+            | Panel 1. Lorem ipsum dolor
+    """
+  'Accordion Multi-expand':
+    'prefix': 'accordion-closed'
+    'body': """
+      ul.accordion(data-accordion='', data-allow-all-closed='true')
+        li.accordion-item.is-active
+          // The tab title needs role="tab", an href, a unique ID, and aria-controls.
+          a#panel1d-heading.accordion-title(href='#panel1d', role='tab', aria-controls='panel1d') Accordion 1
+          // The content pane needs an ID that matches the above href, role="tabpanel", data-tab-content, and aria-labelledby.
+          #panel1d.accordion-content(role='tabpanel', data-tab-content='', aria-labelledby='panel1d-heading')
+            | Panel 1. Lorem ipsum dolor
+    """
+  'Callout':
+    'prefix': 'callout'
+    'body': """
+      .callout
+        h5 This is a callout.
+        p It has an easy to override visual style, and is appropriately subdued.
+        a(href='#') It&apos;s dangerous to go alone, take this.
+    """
+  'Callout Primary':
+    'prefix': 'callout-primary'
+    'body': """
+      .callout.primary
+        h5 This is a secondary panel
+        p It has an easy to override visual style, and is appropriately subdued.
+        a(href='#') It&apos;s dangerous to go alone, take this.
+    """
+  'Callout Secondary':
+    'prefix': 'callout-secondary'
+    'body': """
+      .callout.secondary
+        h5 This is a secondary panel
+        p It has an easy to override visual style, and is appropriately subdued.
+        a(href='#') It&apos;s dangerous to go alone, take this.
+    """
+  'Callout Success':
+    'prefix': 'callout-success'
+    'body': """
+      .callout.success
+        h5 This is a secondary panel
+        p It has an easy to override visual style, and is appropriately subdued.
+        a(href='#') It&apos;s dangerous to go alone, take this.
+    """
+  'Callout Warning':
+    'prefix': 'callout-warning'
+    'body': """
+      .callout.warning
+        h5 This is a secondary panel
+        p It has an easy to override visual style, and is appropriately subdued.
+        a(href='#') It&apos;s dangerous to go alone, take this.
+    """
+  'Callout Alert':
+    'prefix': 'callout-alert'
+    'body': """
+      .callout.alert
+        h5 This is a secondary panel
+        p It has an easy to override visual style, and is appropriately subdued.
+        a(href='#') It&apos;s dangerous to go alone, take this.
+    """
+  'Callout Small':
+    'prefix': 'callout-small'
+    'body': """
+      .callout.small
+        h5 This is a secondary panel
+        p It has an easy to override visual style, and is appropriately subdued.
+        a(href='#') It&apos;s dangerous to go alone, take this.
+    """
+  'Callout Large':
+    'prefix': 'callout-large'
+    'body': """
+      .callout.large
+        h5 This is a secondary panel
+        p It has an easy to override visual style, and is appropriately subdued.
+        a(href='#') It&apos;s dangerous to go alone, take this.
+    """
+  'Callout alert':
+    'prefix': 'callout-alert'
+    'body': """
+      .alert.callout(data-closable='')
+        h5 This is Important!
+        p
+          | But when you&apos;re done reading it, click the close button in the corner to dismiss this alert.
+        button.close-button(data-close='', aria-label='Dismiss alert') &times;
+    """
+  'Dropdown Toggle':
+    'prefix': 'dropdown-toggle'
+    'body': """
+      button.button(type='button', data-toggle='example-dropdown') Toggle Dropdown
+        #example-dropdown.dropdown-pane(data-dropdown='')
+          | Just some junk that needs to be said. Or not. Your choice.
+    """
+  'Dropdown Hover':
+    'prefix': 'dropdown-hover'
+    'body': """
+      button.button(type='button', data-toggle='example-dropdown-1') Hoverable Dropdown
+        #example-dropdown-1.dropdown-pane(data-dropdown='', data-hover='true')
+          | Just some junk that needs to be said. Or not. Your choice.
+    """
+  'Off-canvas':
+    'prefix': 'off-canvas'
+    'body': """
+      .off-canvas-wrapper
+        .off-canvas-wrapper-inner(data-off-canvas-wrapper='')
+          #offCanvas.off-canvas.position-left(data-off-canvas='', data-position='left')
+          .off-canvas-content(data-off-canvas-content='')
+    """
+  'Modal':
+    'prefix': 'modal'
+    'body': """
+      p
+        a(data-open='exampleModal1') Click me for a modal
+      #exampleModal1.reveal(data-reveal='')
+        h1 Awesome. I Have It.
+        p.lead Your couch. It is mine.
+        p I&apos;m a cool paragraph that lives inside of an even cooler modal. Wins!
+        button.close-button(data-close='', aria-label='Close reveal', type='button')
+          span(aria-hidden='true') &times;
+    """
+    'Modal in modal':
+      'prefix': 'modal-in-modal'
+      'body': """
+        p
+          a(data-toggle='exampleModal11') Click me for a modal
+        #exampleModal11.reveal(data-reveal='')
+          h1 Awesome!
+          p.lead I have another modal inside of me!
+          a.button(data-toggle='exampleModal111') Click me for another modal!
+          button.close-button(data-close='', aria-label='Close reveal', type='button')
+            span(aria-hidden='true') &times;
+        #exampleModal111.reveal(data-reveal='')
+          h2 ANOTHER MODAL!!!
+          button.close-button(data-close='', aria-label='Close reveal', type='button')
+            span(aria-hidden='true') &times;
+      """
+  'Modal video':
+    'prefix': 'modal-video'
+    'body': """
+      p
+        a(data-toggle='exampleModal12') Click me for a modal
+      #exampleModal12.reveal(data-reveal='', data-reset-on-close='true')
+        h2#videoModalTitle This modal has video
+        .flex-video.widescreen.vimeo
+          iframe(width='1280', height='720', src='//www.youtube-nocookie.com/embed/wnXCopXXblE?rel=0', frameborder='0', allowfullscreen='')
+        button.close-button(data-close='', aria-label='Close reveal', type='button')
+          span(aria-hidden='true') &times;
+    """
+  'Modal tiny':
+    'prefix': 'modal-tiny'
+    'body': """
+      p
+        a(data-toggle='exampleModal2', aria-controls='exampleModal2') Click me for a tiny modal
+      #exampleModal2.tiny.reveal(data-reveal='')
+        p OH I&apos;M SO TIIINY
+        button.close-button(data-close='', aria-label='Close reveal', type='button')
+          span(aria-hidden='true') &times;
+    """
+  'Modal small':
+    'prefix': 'modal-small'
+    'body': """
+      p
+        a(data-toggle='exampleModal2', aria-controls='exampleModal2') Click me for a tiny modal
+      #exampleModal2.small.reveal(data-reveal='')
+        p OH I&apos;M SO TIIINY
+        button.close-button(data-close='', aria-label='Close reveal', type='button')
+          span(aria-hidden='true') &times;
+    """
+  'Modal medium':
+    'prefix': 'modal-medium'
+    'body': """
+      p
+        a(data-toggle='exampleModal2', aria-controls='exampleModal2') Click me for a tiny modal
+      #exampleModal2.medium.reveal(data-reveal='')
+        p OH I&apos;M SO TIIINY
+        button.close-button(data-close='', aria-label='Close reveal', type='button')
+          span(aria-hidden='true') &times;
+    """
+  'Modal large':
+    'prefix': 'modal-large'
+    'body': """
+      p
+        a(data-toggle='exampleModal2', aria-controls='exampleModal2') Click me for a tiny modal
+      #exampleModal2.large.reveal(data-reveal='')
+        p OH I&apos;M SO TIIINY
+        button.close-button(data-close='', aria-label='Close reveal', type='button')
+          span(aria-hidden='true') &times;
+    """
+  'Modal xlarge':
+    'prefix': 'modal-xlarge'
+    'body': """
+      p
+        a(data-toggle='exampleModal2', aria-controls='exampleModal2') Click me for a tiny modal
+      #exampleModal2.xlarge.reveal(data-reveal='')
+        p OH I&apos;M SO TIIINY
+        button.close-button(data-close='', aria-label='Close reveal', type='button')
+          span(aria-hidden='true') &times;
+    """
+  'Modal full':
+    'prefix': 'modal-full'
+    'body': """
+      p
+        a(data-toggle='exampleModal2', aria-controls='exampleModal2') Click me for a tiny modal
+      #exampleModal2.full.reveal(data-reveal='')
+        p OH I&apos;M SO TIIINY
+        button.close-button(data-close='', aria-label='Close reveal', type='button')
+          span(aria-hidden='true') &times;
+    """
+  'Modal No Overlay':
+    'prefix': 'modal-no-overlay'
+    'body': """
+      p
+        a(data-toggle='exampleModal4') Click me for an overlay-lacking modal
+      #exampleModal4.reveal(data-reveal='', data-overlay='false')
+        p I feel so free!
+        button.close-button(data-close='', aria-label='Close reveal', type='button')
+          span(aria-hidden='true') &times;
+    """
+  'Modal Animation':
+    'prefix': 'modal-animation'
+    'body': """
+      p
+        a(data-toggle='animatedModal1') Click me for a modal
+      #animatedModal1.reveal(data-reveal='', data-close-on-click='true', data-animation-in='spin-in', data-animation-out='spin-out')
+        h1 Whoa, I&apos;m dizzy!
+        p.lead
+          | There are many options for animating modals, check out the Motion UI library to see them all
+        button.close-button(data-close='', aria-label='Close reveal', type='button')
+          span(aria-hidden='true') &times;
+    """
+  'Table':
+    'prefix': 'table-zf'
+    'body': """
+      table
+        thead
+          tr
+            th(width='200') Table Header
+            th Table Header
+            th(width='150') Table Header
+            th(width='150') Table Header
+        tbody
+          tr
+            td Content Goes Here
+            td This is longer content Donec id elit non mi porta gravida at eget metus.
+            td Content Goes Here
+            td Content Goes Here
+          tr
+            td Content Goes Here
+            td
+              | This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.
+            td Content Goes Here
+            td Content Goes Here
+          tr
+            td Content Goes Here
+            td
+              | This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.
+            td Content Goes Here
+            td Content Goes Here
+    """
+  'Table Hover':
+    'prefix': 'table-hover'
+    'body': """
+      table.hover
+        thead
+          tr
+            th(width='200') Table Header
+            th Table Header
+            th(width='150') Table Header
+            th(width='150') Table Header
+        tbody
+          tr
+            td Content Goes Here
+            td This is longer content Donec id elit non mi porta gravida at eget metus.
+            td Content Goes Here
+            td Content Goes Here
+          tr
+            td Content Goes Here
+            td
+              | This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.
+            td Content Goes Here
+            td Content Goes Here
+          tr
+            td Content Goes Here
+            td
+              | This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.
+            td Content Goes Here
+            td Content Goes Here
+    """
+  'Table Stack':
+    'prefix': 'table-stack'
+    'body': """
+      table.stack
+        thead
+          tr
+            th Cookies
+            th Taste
+            th Calories
+            th Overall
+        tbody
+          tr
+            td Chocolate Chip
+            td Tastey
+            td 120cal
+            td 7.5/10
+          tr
+            td Snickerdoodle
+            td Delicious
+            td 95cal
+            td 8/10
+          tr
+            td Oatmeal Raisin
+            td Superb
+            td 10cal
+            td 11/10
+    """
+  'Table Scroll':
+    'prefix': 'table-scroll'
+    'body': """
+      table.scroll
+        thead
+          tr
+            th This is the description!
+            th One
+            th Two
+            th Three
+            th Four
+            th Five
+            th Six
+            th Seven
+            th Eight
+            th Nine
+            th Ten
+            th Eleven
+            th Twelve
+        tbody
+          tr
+            td(style='display:block; width:400px;') These are all the words that people use to describe Foundation 6!
+            td Cool
+            td Swag
+            td Chill
+            td Killer
+            td Rad
+            td Baller
+            td OMG
+            td Sweet
+            td Awesome
+            td Beast
+            td Dope
+            td Tubular
+          tr
+            td These are some words that people use to describe other web frameworks.
+            td Whatevs
+            td Ugh.
+            td LOL
+            td K
+            td Aight
+            td Eh.
+            td Grrr...
+            td Meh.
+            td TTYL
+            td Bleh.
+            td Really?
+            td Why?
+          tr
+            td Here are some great super heros.
+            td Batman
+            td Superman
+            td Spiderman
+            td Wonder Woman
+            td Hulk
+            td Nicolas Cage
+            td Antman
+            td Aquaman
+            td Captain America
+            td Wolverine
+            td Thor
+            td Iron Man
+        tfoot
+          tr
+            td Here&apos;s a footer, just in case
+            td
+            td
+            td
+            td
+            td
+            td
+            td
+            td
+            td
+            td
+            td
+            td
+    """
+  'Tabs':
+    'prefix': 'tabs'
+    'body': """
+      ul#example-tabs.tabs(data-tabs='')
+        li.tabs-title.is-active
+          a(href='#panel1', aria-selected='true') Tab 1
+        li.tabs-title
+          a(href='#panel2') Tab 2
+      .tabs-content(data-tabs-content='example-tabs')
+        #panel1.tabs-panel.is-active
+          p
+            | Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.
+        #panel2.tabs-panel
+          p
+            | Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.
+    """
+  'Tabs Vertical':
+    'prefix': 'tabs-vertical'
+    'body': """
+      .row.collapse
+        .medium-3.columns
+          ul#example-vert-tabs.tabs.vertical(data-tabs='')
+            li.tabs-title.is-active
+              a(href='#panel1v', aria-selected='true') Tab 1
+            li.tabs-title
+              a(href='#panel2v') Tab 2
+            li.tabs-title
+              a(href='#panel3v') Tab 3
+            li.tabs-title
+              a(href='#panel4v') Tab 4
+            li.tabs-title
+              a(href='#panel3v') Tab 5
+            li.tabs-title
+              a(href='#panel4v') Tab 6
+        .medium-9.columns
+          .tabs-content.vertical(data-tabs-content='example-vert-tabs')
+            #panel1v.tabs-panel.is-active
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            #panel2v.tabs-panel
+              p
+                | Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.
+            #panel3v.tabs-panel
+              img.thumbnail(src='assets/img/rectangle-3.jpg')
+            #panel4v.tabs-panel
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            #panel5v.tabs-panel
+              p
+                | Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            #panel6v.tabs-panel
+              img.thumbnail(src='assets/img/rectangle-5.jpg')
+    """
+  'Badge':
+    'prefix': 'badge'
+    'body': """
+      span.badge $1
+    """
+  'Badge secondary':
+    'prefix': 'badge-secondary'
+    'body': """
+      span.secondary.badge $1
+    """
+  'Badge Alert':
+    'prefix': 'badge-alert'
+    'body': """
+      span.alert.badge $1
+    """
+  'Badge Success':
+    'prefix': 'badge-success'
+    'body': """
+      span.sucess.badge $1
+    """
+  'Badge Warning':
+    'prefix': 'badge-warning'
+    'body': """
+      span.warning.badge $1
+    """
+  'Label':
+    'prefix': 'label'
+    'body': """
+      span.label $1
+    """
+  'Orbit Slider':
+    'prefix': 'orbit-slider'
+    'body': """
+      .orbit(role='region', aria-label='Favorite Space Pictures', data-orbit='')
+        ul.orbit-container
+          button.orbit-previous(aria-label='previous')
+            span.show-for-sr Previous Slide
+            | &#x25C0;
+          button.orbit-next(aria-label='next')
+            span.show-for-sr Next Slide
+            | &#x25B6;
+          li.is-active.orbit-slide
+            div
+              h3.text-center You can also throw some text in here!
+              p.text-center
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde harum rem, beatae ipsa consectetur quisquam. Rerum ratione, delectus atque tempore sed, suscipit ullam, beatae distinctio cupiditate ipsam eligendi tempora expedita.
+              h3.text-center This Orbit slide has chill
+          li.orbit-slide
+            div
+              h3.text-center You can also throw some text in here!
+              p.text-center
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde harum rem, beatae ipsa consectetur quisquam. Rerum ratione, delectus atque tempore sed, suscipit ullam, beatae distinctio cupiditate ipsam eligendi tempora expedita.
+              h3.text-center This Orbit slide has chill
+          li.orbit-slide
+            div
+              h3.text-center You can also throw some text in here!
+              p.text-center
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde harum rem, beatae ipsa consectetur quisquam. Rerum ratione, delectus atque tempore sed, suscipit ullam, beatae distinctio cupiditate ipsam eligendi tempora expedita.
+              h3.text-center This Orbit slide has chill
+          li.orbit-slide
+            div
+              h3.text-center You can also throw some text in here!
+              p.text-center
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde harum rem, beatae ipsa consectetur quisquam. Rerum ratione, delectus atque tempore sed, suscipit ullam, beatae distinctio cupiditate ipsam eligendi tempora expedita.
+              h3.text-center This Orbit slide has chill
+        nav.orbit-bullets
+          button.is-active(data-slide='0')
+            span.show-for-sr First slide details.
+            span.show-for-sr Current Slide
+          button(data-slide='1')
+            span.show-for-sr Second slide details.
+          button(data-slide='2')
+            span.show-for-sr Third slide details.
+          button(data-slide='3')
+            span.show-for-sr Fourth slide details.
+
+    """
+  'Progress Bar':
+    'prefix': 'progressbar'
+    'body': """
+      .progress(role='progressbar', tabindex='0', aria-valuenow='20', aria-valuemin='0', aria-valuetext='25 percent', aria-valuemax='100')
+        span.progress-meter(style='width: 25%')
+          p.progress-meter-text 25%
+    """
+  'Thumbnail':
+    'prefix': 'thumbnail'
+    'body': """
+      img.thumbnail(src='assets/img/thumbnail/01.jpg', alt='Photo of Uranus.')
+      """
+  'Tooltip':
+    'prefix': 'tooltip'
+    'body': """
+      p
+        | The
+        span.has-tip(data-tooltip='', aria-haspopup='true', data-disable-hover='false', tabindex='1', title='Fancy word for a beetle.') scarabaeus
+        |  hung quite clear of any branches, and, if allowed to fall, would have fallen at our feet. Legrand immediately took the scythe, and cleared with it a circular space, three or four yards in diameter, just beneath the insect, and, having accomplished this, ordered Jupiter to let go the string and come down from the tree.
+    """
+  'Form Abide':
+    'prefix': 'form-abide'
+    'body': """
+      form(data-abide='', novalidate='')
+        .alert.callout(data-abide-error='', style='display: none;')
+          p
+            i.fi-alert
+            |  There are some errors in your form.
+        .row
+          .small-12.columns
+            label
+              | Input Label
+              input(type='text', placeholder='.small-12.columns', aria-describedby='exampleHelpText', required='', pattern='number')
+              span.form-error
+                | Yo, you had better fill this out.
+            p#exampleHelpText.help-text Here&apos;s how you use this input field!
+        .row
+          .medium-6.columns
+            label
+              | Input Label
+              input(type='text', placeholder='.medium-6.columns', pattern='url')
+          .medium-6.columns
+            label
+              | Input Label
+              select#select(required='')
+                option(value='')
+                option(value='volvo') Volvo
+                option(value='saab') Saab
+                option(value='mercedes') Mercedes
+                option(value='audi') Audi
+        .row
+          fieldset.large-6.columns
+            legend Choose Your Favorite
+            input#pokemonRed(type='radio', name='pokemon', value='Red')
+            label(for='pokemonRed') Red
+            input#pokemonBlue(type='radio', name='pokemon', value='Blue', required='')
+            label(for='pokemonBlue') Blue
+            input#pokemonYellow(type='radio', name='pokemon', value='Yellow')
+            label(for='pokemonYellow') Yellow
+          fieldset.large-6.columns
+            legend Choose Your Favorite
+            input#pocketsRed(type='radio', name='pockets', value='Red')
+            label(for='pocketsRed') Red
+            input#pocketsBlue(type='radio', name='pockets', value='Blue')
+            label(for='pocketsBlue') Blue
+            input#pocketsYellow(type='radio', name='pockets', value='Yellow')
+            label(for='pocketsYellow') Yellow
+          fieldset.large-6.columns
+            legend Check these out
+            input#checkbox1(type='checkbox')
+            label(for='checkbox1') Checkbox 1
+            input#checkbox2(type='checkbox', required='')
+            label(for='checkbox2') Checkbox 2
+            input#checkbox3(type='checkbox')
+            label(for='checkbox3') Checkbox 3
+        .row
+          fieldset.large-6.columns
+            button.button(type='submit', value='Submit') Submit
+          fieldset.large-6.columns
+            button.button(type='reset', value='Reset') Reset
+    """
+  'Equalizer':
+    'prefix': 'equalizer'
+    'body': """
+      #test-eq.row(data-equalizer='')
+        .medium-4.columns
+          .callout(data-equalizer-watch='')
+            img(src='assets/img/square-1.jpg')
+        .medium-4.columns
+          .callout(data-equalizer-watch='')
+            p Pellentesque habitant morbi tristique senectus et netus et, ante.
+        .medium-4.columns
+          .callout(data-equalizer-watch='')
+            img(src='assets/img/rectangle-1.jpg')
+    """
+  'Equalizer Nesting':
+    'prefix': 'equalizer-nesting'
+    'body': """
+      .row(data-equalizer='foo')
+        .medium-4.columns(data-equalizer-watch='foo')
+          .callout(data-equalizer='bar')
+            h3 Parent panel
+            .callout(data-equalizer-watch='bar')
+            .callout(data-equalizer-watch='bar')
+            .callout(data-equalizer-watch='bar')
+        .medium-4.columns
+          .callout.panel(data-equalizer-watch='foo')
+        .medium-4.columns
+          .callout(data-equalizer-watch='foo')
+    """

@@ -1,0 +1,41 @@
+'.text.jade':
+
+  'Row':
+    'prefix': 'row'
+    'body': """
+      .row
+        $1
+    """
+
+  'Small Grid':
+    'prefix': 'small-'
+    'body': """
+      .columns(class='small-${1:1-12}')
+        $0
+    """
+
+  'Medium Grid':
+    'prefix': 'medium-'
+    'body': """
+      .columns(class='medium-${1:1-12}')
+        | $0
+    """
+
+  'Large Grid':
+    'prefix': 'large-'
+    'body': """
+      .columns(class='large-${1:1-12}')
+        $0
+    """
+  'XLarge Grid':
+    'prefix': 'xlarge-'
+    'body': """
+      .columns(class='xlarge-${1:1-12}')
+        $0
+    """
+  'XXLarge Grid':
+    'prefix': 'xxlarge-'
+    'body': """
+      .columns(class='xxlarge-${1:1-12}')
+        $0
+    """
