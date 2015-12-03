@@ -1,13 +1,8 @@
-# Zurb Foundation for sites support for [Atom.io](https://atom.io/)
+# Zurb Foundation 6 for sites snippets for [Atom.io](https://atom.io/)
 
 Provides [Zurb Foundation for sites][1] classes and Jade tags with autocompletion features.
 
-![Atom.io Zurb Foundation 6](https://github.com/iamtirado/atom-zurb-foundation-jade/image.jpg?raw=true)
-
-Install:
-```bash
-apm install atom-zurb-foundation-6-jade
-```
+![Atom.io Zurb Foundation 6](https://github.com/iamtirado/atom-zurb-foundation-jade/image.jpg)
 
 ## Features:
 
