@@ -1,4 +1,4 @@
-AtomZurbfoundationView = require './atom-zurbfoundation-view'
+AtomZurbfoundationView = require './atom-zurbfoundation-jade-view'
 {CompositeDisposable} = require 'atom'
 
 module.exports = AtomZurbfoundation =
