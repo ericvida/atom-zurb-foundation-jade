@@ -2,7 +2,7 @@
 
 Provides [Zurb Foundation for sites][1] classes and Jade tags with autocompletion features.
 
-![Atom.io Zurb Foundation 6](https://github.com/iamtirado/atom-zurb-foundation-jade/blob/master/image.jpg?raw=true)
+![Atom.io Zurb Foundation 6](https://github.com/iamtirado/atom-zurb-foundation-jade/image.jpg?raw=true)
 
 Install:
 ```bash
