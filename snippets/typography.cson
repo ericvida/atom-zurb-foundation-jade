@@ -1,0 +1,57 @@
+'.text.jade':
+
+  'Lead':
+    'prefix': 'lead'
+    'body': 'p.lead $0'
+
+  'Stat':
+    'prefix': 'stat'
+    'body': '.stat $0'
+
+  'Aria-hidden':
+    'prefix': 'aria-hidden'
+    'body': 'p(aria-hidden='true') $0'
+
+  'Show on focus':
+    'prefix': 'show-on-focus'
+    'body': 'p.show-on-focus $0'
+
+  'no-bullet':
+    'prefix': 'no-bullet'
+    'body': """
+      ul.no-bullet
+        li $0
+
+    """
+
+  'dl':
+    'prefix': 'dl'
+    'body':"""
+      dl
+        dt $0
+        dd $1
+
+    """
+
+  'CheckBox':
+    'prefix': 'checkbox'
+    'body':"""
+      fieldset.large-6.columns
+        legend Check these out
+        input#checkbox(type='checkbox')
+          label(for='checkbox') $1
+    """
+
+  'Radio':
+    'prefix': 'radio'
+    'body':"""
+      fieldset.large-6.columns
+        legend $0
+        input(type='radio', name='$1', value='$2', id='$3', required='')
+          label(for='$4') $5
+      """
+  'Help Text':
+    'prefix': 'help-text'
+    'body':"""
+      p.help-text(id='$0') $1
+    """
