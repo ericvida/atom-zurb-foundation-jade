@@ -1,4 +1,4 @@
-'.text.jade':
+'.source.jade':
   'Zurb Foundation basic HTML template':
     'prefix': 'html-zf'
     'body': """

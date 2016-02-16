@@ -1,4 +1,4 @@
-'.text.jade':
+'.source.jade':
 
   'Row':
     'prefix': 'row'

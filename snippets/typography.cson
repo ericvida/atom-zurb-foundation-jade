@@ -1,4 +1,4 @@
-'.text.jade':
+'.source.jade':
 
   'Lead':
     'prefix': 'lead'
@@ -10,7 +10,7 @@
 
   'Aria-hidden':
     'prefix': 'aria-hidden'
-    'body': 'p(aria-hidden='true') $0'
+    'body': 'p(aria-hidden="true") $0'
 
   'Show on focus':
     'prefix': 'show-on-focus'
